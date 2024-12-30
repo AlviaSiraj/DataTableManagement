@@ -1,0 +1,343 @@
+.TaskManager {
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    width: 100%;
+    height: 60px;
+    background-color: #2d3053;
+    color: white;
+    /* Replace with your desired color */
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upload {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upload h5 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #333;
+}
+
+.upload input {
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+
+.uploadButton {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.uploadButton:hover {
+    background-color: #0056b3;
+}
+
+.dataList {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: #f8d7da;
+    /* Light pink background */
+    padding-bottom: 10px;
+    padding-left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.card h4 {
+    font-size: 13px;
+    color: #721c24;
+    margin-bottom: -10px;
+}
+
+.card p {
+    font-size: 13px;
+    color: #721c24;
+    margin-bottom: -10px;
+}
+
+.deleteButton {
+    cursor: pointer;
+    margin: 10px;
+}
+
+.viewButton {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.backButton {
+    padding: 5px 10px;
+    margin-left: 20px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    justify-content: left;
+    cursor: pointer;
+    display: flex;
+}
+
+.displayTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table container for better layout */
+.table-container {
+    overflow-x: auto;
+    margin: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* just the first row */
+table thead tr {
+    background-color: #14194b;
+    color: #ffffff;
+    text-align: left;
+}
+
+/* make the rows bigger */
+table th,
+table td {
+    padding: 12px 15px;
+    border: 1px solid #dddddd;
+}
+
+/* alternate row coloring */
+table tbody tr:nth-child(even) {
+    background-color: #9e9a9a;
+}
+
+.search-container label {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.search-container input {
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.search-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    /* Small gap between the label and the search bar */
+}
+
+.addButton {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    /* Adjusted width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Added subtle shadow for depth */
+}
+
+.modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.submitButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.cancelButton {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin: 10px;
+    /* Add space between input and checkbox */
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.form-group input[type="checkbox"] {
+    margin-left: 10px;
+    /* Space between text box and checkbox */
+    align-self: center;
+    /* Align checkbox vertically */
+}
+
+.form-group .input-group {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    /* Space between text box and checkbox */
+}
+
+.notification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.notificationModal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    box-shadow: white;
+    text-align: left;
+    /* Align content inside the modal to the left */
+    max-width: 400px;
+    width: 90%;
+    position: relative;
+    /* Allows absolute positioning inside the modal */
+}
+
+.NotificationTitle {
+    padding: 0;
+    text-align: left;
+    margin-top: 0px;
+    font-size: 12px;
+
+}
+
+.modalMessage {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #333;
+    text-align: left;
+}
+
+.notificationButton {
+    display: flex;
+    justify-content: flex-end;
+    /* Align the button to the right */
+    margin-top: 20px;
+    /* Add spacing between the content and the button */
+}
+
+.notificationButton button {
+    width: 80px;
+    cursor: pointer;
+
+}
+
+.notificationButton button:hover {
+    border-color: blue;
+    /* Button hover effect */
+}
+
+.editButton {
+    cursor: pointer;
+    margin: 10px;
+    display: flex;
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .pagination .excelButton {
+    position: absolute;
+    right: 0;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white; /* White text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .pagination .excelButton:hover {
+    background-color: #0056b3;
+  }

@@ -24,8 +24,7 @@ This project is a React-based data table management application with Electron in
 1. Clone the repository
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/AlviaSiraj/DataTableManagement.git
 ```
 
 2. Install dependencies using yarn

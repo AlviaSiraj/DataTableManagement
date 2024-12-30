@@ -1,7 +1,11 @@
 .App {
   text-align: center;
 }
-
+body, html {
+  margin: 0;
+  padding: 0;
+  background-color: #ffff; /* Replace with your desired color */
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

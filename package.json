@@ -2,17 +2,34 @@
   "name": "asset-tracker",
   "version": "0.1.0",
   "private": true,
+  "homepage": "./",
+  "type": "module",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "electron-store": "^10.0.0",
+    "express": "^4.21.2",
+    "font-awesome": "^4.7.0",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.1",
+    "multer": "^1.4.5-lts.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^7.1.0",
     "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.0"
+    "react-toastify": "^11.0.2",
+    "web-vitals": "^2.1.0",
+    "xlsx": "^0.18.5"
   },
   "scripts": {
     "start": "react-scripts start",
+    "electron-start": "electron main.mjs",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -34,5 +51,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "electron": "^33.2.1"
+  },
+  "main": "index.js",
+  "author": "AlviaSiraj <alvia.siraj@gmail.com>",
+  "license": "MIT"
 }
